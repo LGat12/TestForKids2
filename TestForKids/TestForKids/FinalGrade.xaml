@@ -1,0 +1,53 @@
+﻿<Window x:Class="TestForKids.FinalGrade"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestForKids"
+        mc:Ignorable="d"
+        Title="FinalGrade" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition />
+
+
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0"  FontSize="90" Text="ציון סופי" TextDecorations="Underline"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   
+                   />
+
+        <TextBlock Grid.Row="1" FontSize="80" Text="0" VerticalAlignment="Top" HorizontalAlignment="Center"
+                   x:Name="Final_Grade" Margin="0,10,0,0"
+                   />
+        <TextBlock Grid.Row="2" FontSize="30" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"
+           x:Name="Last_Words"
+           />
+
+        <TextBlock FontSize="19" Text="Perfect" x:Name="Notes" Grid.Row="0" VerticalAlignment="Top" Margin="10,0,-10,0"
+            />
+
+        <Image x:Name="angryEmojiImage" Source="Images\מקיא.jpg"
+       Grid.Row="1" Margin="0,109,544,-1" Grid.RowSpan="2" Visibility="Collapsed"
+       />
+        <Image x:Name="Perfect_image" Source="Images\PerfectImage.jpg"
+       Grid.Row="1" Margin="0,120,594,-68" Grid.RowSpan="2" Visibility="Collapsed"
+       />
+
+
+        <MediaElement x:Name="Perfect" Source="Sound\correcto_Xgyp04B.mp3" LoadedBehavior="Manual" />
+        <MediaElement x:Name="Excelent" Source="Sound\correct-answer-new.mp3" LoadedBehavior="Manual" />
+        <MediaElement x:Name="Nice" Source="Sound\1-correct-answer_jXgXALQ.mp3" LoadedBehavior="Manual" />
+        <MediaElement x:Name="Fail" Source="Sound\thepriceisright-loserhorns.mp3" LoadedBehavior="Manual" />
+
+    </Grid>
+</Window>
